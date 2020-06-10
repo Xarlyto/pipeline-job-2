@@ -11,6 +11,7 @@ pipeline {
 
         stage ('Do_Something') {
             steps {
+                error("Build fallida por que si..")
                 bat "Java -version"
             }
         }
